@@ -82,3 +82,13 @@ body {font-family: Verdana, sans-serif;}
   color: white !important
 }
 
+
+body{
+    background-color: #40474f;
+}
+
+.frontend{
+    background-image:url("fotos/NoPath\ -\ kopie.png");
+    height: 1000px;
+    background-repeat: no-repeat;
+}
