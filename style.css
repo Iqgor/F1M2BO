@@ -10,7 +10,7 @@
 }
 
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+
 
 /* Month header */
 .month {
@@ -85,10 +85,19 @@ body {font-family: Verdana, sans-serif;}
 
 body{
     background-color: #40474f;
+    font-family: Verdana, sans-serif;
+    margin: 0;
 }
 
 .frontend{
     background-image:url("fotos/NoPath\ -\ kopie.png");
     height: 1000px;
     background-repeat: no-repeat;
+    margin: 0;
+}
+
+.frontend > h1{
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
 }
