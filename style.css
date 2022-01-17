@@ -1,5 +1,7 @@
-.tickets{
-    
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 
@@ -100,4 +102,27 @@ body{
     padding: 40px;
     margin: 0 auto;
     text-align: center;
+}
+
+#contact{
+    width: 650px;
+    padding-left: 40px;
+}
+
+
+#contact > ul{
+    padding: 0;
+}
+
+.openingstijden > p{
+    width: 650px;
+    padding-left: 40px;
+}
+
+.openingstijden > h1{
+  padding-left: 40px;
+}
+
+.openingstijden > h3{
+  padding-left: 40px;
 }
