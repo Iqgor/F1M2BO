@@ -11,6 +11,8 @@ body{
     background-color: #40474f;
     font-family: Verdana, sans-serif;
     font-size:16px;
+    position: relative;
+    min-height: 100vh;
 
 }
 
@@ -87,6 +89,7 @@ h2{
   font-size: 300%;
   color: white;
   text-transform: uppercase;
+
 }
 
 
@@ -139,15 +142,15 @@ h2{
 }
 
 
-#contact{
-    width: 650px;
+.contact {
     padding-left: 40px;
 }
 
-
-#contact > ul{
+.contact > ul{
     padding: 0;
+    list-style: none;
 }
+
 
 .openingstijden > p{
     width: 650px;
@@ -162,3 +165,8 @@ h2{
   padding-left: 40px;
 }
 
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
