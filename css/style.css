@@ -70,7 +70,7 @@ h1{
 }
 
 .frontend{
-  background-image:url("fotos/NoPath\ -\ kopie.png");
+  background-image:url("../fotos/NoPath\ -\ kopie.png");
   height: 1000px;
   background-repeat: no-repeat;
   margin: 0;  
@@ -170,3 +170,29 @@ footer{
   bottom: 0;
   width: 100%;
 }
+
+.tickets > p{
+  width: 160px;
+  height: 24px;
+  background: orangered;
+}
+
+.interactief{
+  margin: 0 auto;
+  margin-top: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 3px;
+  background: green;
+  
+} 
+
+.interactief:hover{
+  background: white;
+  color: black;
+}
+
