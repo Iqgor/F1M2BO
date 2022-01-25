@@ -100,21 +100,26 @@ nav > ul > li > a {
 
 .mainNav{
   position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .mainNavList{
   list-style: none;
   height: 65%;
+}
+
+.mainNavListTent{
+  list-style: none;
+  height: 85%;
 }
 
 .mainNavListItem{
