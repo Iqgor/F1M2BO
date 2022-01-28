@@ -162,3 +162,16 @@ h2{
   padding-left: 40px;
 }
 
+#container{
+  background-color: lightgreen;
+  width: 900px;
+  height: 600px;
+  margin: 50px auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: inset 2px black;
+}
+
+#myInteraction{
+  padding: 30px;
+}
