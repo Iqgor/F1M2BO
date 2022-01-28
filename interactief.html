@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+
     <title>Interactieve route</title>
 </head>
 
@@ -23,41 +24,59 @@
                     </a></li>
 
                 <li><a href="tickets.html" class=ticketsButton>Tickets</a></li>
-                <button id="js--menu" class="headerButton" >menu</button>
+                <button id="js--menu" class="headerButton">menu</button>
             </ul>
-            
+
         </nav>
     </header>
     <div id="js--nav" class="mainNav">
         <ul class="mainNavList">
-            <button id="js--close" class="closeButton">X</button>  
+            <button id="js--close" class="closeButton">X</button>
             <li class="mainNavListItem"><a href="tentoonstellingen.html">Tentoonstellingen</a></li>
             <li class="mainNavListItem"><a href="geschiedenis.html">Geschiedenis</a></li>
             <li class="mainNavListItem"><a href="contact.html">Conctact</a></li>
             <li class="mainNavListItem"><a href="openingstijden.html">Openingstijden</a></li>
         </ul>
     </div>
-    <div id="container">
-        <img id="myImage" src="fotos/ingang.jpg" height="300px" width="500px" alt="ingang">
-        <div class="myInteraction">
-            <div class="myTitle">
-                hier komt titel
+    <main>
+        <div class="bigFigure">
+            <figure class="bigFigureImg"><img src="fotos/8ceda712-beaa-4694-92ff-6a5a74b72c42.jpg"
+                    alt="Mensen bij de ingang van het Rijks."></figure>
+            <section class="bigFigureSec">
+                <h2>Interactiefe Route</h2>
+            </section>
+        </div>
+        <div class="interactief" id="container">
+            <img id="myImage" src="fotos/foto1.jpg" height="600px" alt="foto sb">
+            <div id="myInteraction">
+                <div id="myTitle">Hier komt de titel</div>
                 <input type="text" id="myInput" autocomplete="off">
                 <input type="button" value="voer in" onclick="getInput()">
-                <h3>Kies welke richting je op wilt:</h3>
+                <h3>Kies welke richting je op wil!</h3>
                 <nav>
-                    <button id="knopRechtdoor" onclick="goDirection('Rechtdoor')">Rechtdoor</button>
-                    <button id="knopLinks" onclick="goDirection('Links')">Links</button>
-                    <button id="knopRechts" onclick="goDirection('Rechts')">Rechts</button>
-                    <button id="knopAchteruit" onclick="goDirection('Achteruit')">Achteruit</button>
-                    
-                    <script src="interactief.js" defer></script> 
+                    <div class="compass">
+                        <button id="knopNoord" onclick="goDirection('Noord')">Noord</button>
+                        <div class="sideButtons">
+                            <button id="knopWest" onclick="goDirection('West')">West</button>
+                            <button id="knopOost" onclick="goDirection('Oost')">Oost</button>
+                        </div>
+                        <button id="knopZuid" onclick="goDirection('Zuid')">Zuid</button>
+                    </div>
+                    <img src="fotos/unnamed.jpg" id="mapImage" alt="Map met compass">
                 </nav>
+
             </div>
-        </div>
+
+    </main>
     </div>
-    
-   
-</body>
+    <script src="interactief.js"></script>
+    <footer>
+        <ul>
+            <li>socials: <a href="https://www.facebook.com/rijksmuseum/" target="_blank">Facebook</a>, <a
+                    href="https://www.instagram.com/rijksmuseum/" target="_blank">Instagram</a>, <a
+                    href="https://www.tiktok.com/@rijksmuseum" target="_blank">Tiktok</a></li>
+            <li>Open ja of nee?</li>
+        </ul>
+    </footer>
 
 </html>
