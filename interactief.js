@@ -1,8 +1,3 @@
-const myTitle = document.getElementById("myTitle")
-const myImage = document.getElementById("myImage")
-const myInput = document.getElementById("myInput")
-
-
 
 let directionButtons = {
     "Noord" : document.getElementById('knopNoord'),
@@ -103,7 +98,6 @@ let locaties = [ //Array
     },
 ]
 
-
 function show(index){
     myTitle.innerHTML = locaties[index].titel;
     myImage.src = locaties[index].image;
@@ -141,10 +135,12 @@ function updateDirections(){
 function getInput(){
     show(myInput.value)
     myInput.value = "",
+
     myInput.focus();
 }
 
 function goDirection(richting){
+
     let punt_index = locaties[current_index].directions[richting];
     console.log(current_index)
     show(punt_index);
