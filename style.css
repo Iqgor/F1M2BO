@@ -1,128 +1,483 @@
 *{
+  margin: 0;
+  padding: 0;
   margin:0;
   padding:0;
+
   box-sizing: border-box;
 }
 
-
-.agenda{
-    width: 30%;
-    margin-left: 65%;
-    margin-top: 2%;
-}
-
-ul {list-style-type: none;}
-
-
-/* Month header */
-.month {
-  padding: 70px 25px;
-  background: #1abc9c;
-  text-align: center;
-}
-
-/* Month list */
-.month ul {
-  margin: 0;
-  padding: 0;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-/* Previous button inside month header */
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-/* Next button */
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
-
-/* Weekdays (Mon-Sun) */
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color:#ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
-
-/* Days (1-31) */
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
-}
-
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-}
-
-/* Highlight the "current" day */
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
-}
-
-
 body{
-    background-color: #456c97;
+    background-color: #40474f;
     font-family: Verdana, sans-serif;
-    margin: 0;
+    font-size:16px;
+    position: relative;
+    min-height: 100vh;
+
+}
+
+
+
+header, footer{
+  background-color: black;
+  color:white;
+  height: 70px;
+}
+
+nav{
+  width: 60vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+nav > ul{ 
+  display: flex;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+nav > ul > li{
+  font-family:'Open Sans', sans-serif; 
+ 
+}
+
+.ticketsButton{
+  height: 3.125rem;
+  display:inline-flex ;
+  padding: 0 25px;
+  border-radius: 2px;
+  background: #d55140;
+}
+
+.ticketsButton:hover{
+  background: white;
+  color: black;
+}
+
+.headerButton{
+  position: absolute;
+  right: 5vw;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+
+.headerButton:hover{
+  cursor: pointer ;
+  color: gray;
+}
+
+nav > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.closeButton{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  text-transform: uppercase;
+  background:transparent;
+  color: white;
+  border: none;
+  font-size: 500%;
+}
+
+.closeButton:hover{
+  cursor: pointer;
+}
+
+.mainNav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mainNavList{
+  list-style: none;
+  height: 65%;
+}
+
+.mainNavListTent{
+  list-style: none;
+  height: 85%;
+}
+
+.mainNavListItem{
+  font-size: 350%;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+.mainNavListItem > a{
+  color:white;
+  text-decoration: none;
+  
+}
+
+main{
+  min-height:100vh;
+  color: #c2ccce;
+}
+
+.bigFigure{
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -1;
+}
+
+.bigFigureImg{
+  width: 100%;
+  height: 95vh;
+}
+
+.bigFigureImg > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bigFigureSec{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  padding: 80px;
+  padding-bottom: 100px;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-image: linear-gradient(182deg,transparent 50%,rgba(32,35,39,.5));
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: gray;
+  cursor: pointer;
+
+}
+
+h1{
+  font-size: 400%;
+  text-transform: uppercase;
 }
 
 .frontend{
-    background-image:url("fotos/NoPath\ -\ kopie.png");
-    height: 1000px;
-    background-repeat: no-repeat;
-    margin: 0;
+  background-image:url("fotos/NoPath\ -\ kopie.png");
+  height: 1000px;
+  background-repeat: no-repeat;
+  margin: 0;  
 }
 
 .frontend > h1{
-    padding: 40px;
-    margin: 0 auto;
-    text-align: center;
+  color: white;
+  font-size: 900%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-#contact{
-    width: 650px;
+
+h2{
+  font-family: sans-serif;
+  font-size: 7vw;
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0 20px 0;
+
+}
+
+
+.slideshow{
+  max-width: 1000px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  margin-top: 25px;
+  
+}
+
+.mySlides{
+  display: none;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.Digi{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.linkDigi{
+  height: 3.125rem;
+  display:inline-flex ;
+  padding: 0 25px;
+  border-radius: 2px;
+  background: #d55140;
+  align-items: center;
+}
+
+
+.contact {
     padding-left: 40px;
+    font-size: 110%;
+    
 }
 
-
-#contact > ul{
+.contact > ul{
     padding: 0;
+    list-style: none;
+   
 }
 
-.openingstijden > p{
-    width: 650px;
-    padding-left: 40px;
+.contact > ul > p{
+  margin-bottom: 25px;
+
 }
 
-.openingstijden > h1{
-  padding-left: 40px;
+.contactList{
+  margin-bottom: 20px;
+  
 }
 
-.openingstijden > h3{
-  padding-left: 40px;
+.openingstijden{
+  width: 70%;
+  margin: 30px;
+}
+
+.tickets > ul{
+  list-style: none;
+  border-style: ridge ;
+  border-width: 2px;
+  width: fit-content;
+}
+
+.tickets > ul > li{
+  margin: 10px;
+ 
+  
+}
+
+.geschiedenis, .tickets {
+  margin: 30px;
+  margin-right: 10vw;
+}
+
+.geschiedenis > p, .openingstijden > p{
+  margin-bottom: 15px;
+
+}
+
+.geschiedenis > h3, .openingstijden > h3{
+  margin-bottom:5px;
+}
+
+.tentoon{
+  margin: 30px;
+}
+
+.tent{
+  height: 600px;
+  padding: 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+
+.tent > a > figure{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  border-radius: 50px;
+  
+}
+
+.tent > a > figure > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0;
+  border-radius: 50px;
+  transition: transform .5s;
+}
+
+.tent:hover img{
+  transform:scale(1.05);
+}
+
+.tent > a > .artSec{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  padding: 40px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent,60%,black);
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  
+}
+
+
+.tent > .artSec > p{
+  margin: 0;
+}
+
+.route{
+  height: 50vw;
+  display: flex;
+}
+
+.routeFotos{
+  width: 80vw;
+}
+
+.routeFotos > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.routePlattegrond{
+  width: 50vw;
+}
+
+.routePlattegrond > img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.routeNav{
+  height: 300px;
+  position: relative;
+
+}
+
+.compass{
+  position: absolute;
+  background: red;
+  height: 100px;
+  width: 100px;
+}
+
+.openingstijden{
+  
+}
+  
+
+footer{
+ 
+}
+
+@media screen and (max-width:1200px) {
+  .frontend > h1{
+    font-size: 400%;
+  }
+  header{
+    height: 300px;
+  }
+  nav > ul{
+    flex-direction: column;
+    gap: 0;
+  }
+  .headerButton{
+    top: 8vw;
+    font-size: 150%;
+    
+}
+.mainNavListItem{
+  font-size: 280%;    
+}
+}
+
+@media screen and (max-width:600px) {
+  .frontend > h1{
+    font-size: 200%;
+  }
+  header{
+    height: 300px;
+  }
+  nav > ul{
+    flex-direction: column;
+    gap: 0;
+  }
+  .headerButton{
+      top: 8vw;
+      font-size: 150%;
+  }
+  .mainNavListItem{
+    font-size: 200%;    
+  }
+
 }
