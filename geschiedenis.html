@@ -6,25 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
     <title>Geschiedenis</title>
 </head>
 
-<body>
+<body id="jss-body">
     <header>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="fotos/rijksmuseum-logo-png-transparent.png" width="400"
-                            height="47.166" alt="Logo Rijksmuseum"></a></li>
-                <li><a href="tentoonstellingen.html">Tentoonstellingen</a></li>
-                <li><a href="geschiedenis.html">Geschiedenis</a></li>
-                <li><a href="contact.html">Conctactgegeven</a></li>
-                <li><a href="openingstijden.html">Openingstijden</a></li>
+                <li><a href="interactief.html" class="linkDigi">
+                        Digitaleroute
+                    </a></li>
+
+
+                <li><a href="index.html">
+                        <h1>Rijksmuseum</h1>
+                    </a></li>
+
+                <li><a href="tickets.html" class=ticketsButton>Tickets</a></li>
+                <button id="js--menu" class="headerButton" >menu</button>
             </ul>
+            
         </nav>
     </header>
+    <div id="js--nav" class="mainNav">
+        <ul class="mainNavList">
+            <button id="js--close" class="closeButton">X</button>  
+            <li class="mainNavListItem"><a href="tentoonstellingen.html">Tentoonstellingen</a></li>
+            <li class="mainNavListItem"><a href="geschiedenis.html">Geschiedenis</a></li>
+            <li class="mainNavListItem"><a href="contact.html">Conctact</a></li>
+            <li class="mainNavListItem"><a href="openingstijden.html">Openingstijden</a></li>
+        </ul>
+    </div>
     <main>
-        <article>
-            <h1>Geschiedenis</h1>
+        <div class="bigFigure">
+            <figure class="bigFigureImg"><img src="fotos/d9443bed-26f6-4f88-b6fa-6bd16ccd3f51.webp"
+                    alt="Het oude rijksmuseum"></figure>
+            <section class="bigFigureSec">
+                <h2>Geschiedenis</h2>
+            </section>
+        </div>
+        <article class="geschiedenis">
             <p>
                 Toen het Rijksmuseum twee eeuwen geleden z’n deuren opende, was dat níet in Amsterdam. Waar dan wel?
                 En wat had Napoleon met de verhuizing te maken?
@@ -64,7 +86,9 @@
     </main>
     <footer>
         <ul>
-            <li>socials: <a href="https://www.facebook.com/rijksmuseum/" target="_blank">Facebook</a>, <a href="https://www.instagram.com/rijksmuseum/" target="_blank">Instagram</a>, <a href="https://www.tiktok.com/@rijksmuseum" target="_blank">Tiktok</a></li>
+            <li>socials: <a href="https://www.facebook.com/rijksmuseum/" target="_blank">Facebook</a>, <a
+                    href="https://www.instagram.com/rijksmuseum/" target="_blank">Instagram</a>, <a
+                    href="https://www.tiktok.com/@rijksmuseum" target="_blank">Tiktok</a></li>
             <li>Open ja of nee?</li>
         </ul>
     </footer>
