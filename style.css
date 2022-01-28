@@ -13,7 +13,7 @@ body{
     font-size:16px;
     position: relative;
     min-height: 100vh;
-
+    overflow-x: hidden;
 }
 
 
@@ -283,6 +283,20 @@ h2{
   align-items: center;
 }
 
+.recensies{
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  
+}
+
+.recensie{
+  width: 400px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
 
 .contact {
     padding-left: 40px;
@@ -393,43 +407,15 @@ h2{
   margin: 0;
 }
 
-.route{
-  height: 50vw;
+.interactief{
   display: flex;
 }
 
-.routeFotos{
-  width: 80vw;
-}
-
-.routeFotos > img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.routePlattegrond{
+.interactief > img{
   width: 50vw;
-}
-
-.routePlattegrond > img{
-  height: 100%;
-  width: 100%;
   object-fit: cover;
 }
 
-.routeNav{
-  height: 300px;
-  position: relative;
-
-}
-
-.compass{
-  position: absolute;
-  background: red;
-  height: 100px;
-  width: 100px;
-}
 
 .openingstijden{
   
