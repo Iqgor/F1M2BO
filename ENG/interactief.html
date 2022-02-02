@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Digital route</title> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="interactief.html" class="linkDigi">
+                        Digital route
+                    </a></li>
+
+
+                <li><a href="index.html">
+                        <h1>Rijksmuseum</h1>
+                    </a></li>
+
+                <li><a href="tickets.html" class=ticketsButton>Tickets</a></li>
+                <button id="js--menu" class="headerButton">menu</button>
+            </ul>
+
+        </nav>
+    </header>
+    <div id="js--nav" class="mainNav">
+        <ul class="mainNavList">
+            <button id="js--close" class="closeButton">X</button>
+            <li class="mainNavListItem"><a href="tentoonstellingen.html">Exhibitions</a></li>
+            <li class="mainNavListItem"><a href="geschiedenis.html">History</a></li>
+            <li class="mainNavListItem"><a href="contact.html">Conctact</a></li>
+            <li class="mainNavListItem"><a href="openingstijden.html">Opening hours</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="bigFigure">
+            <figure class="bigFigureImg"><img src="fotos/8ceda712-beaa-4694-92ff-6a5a74b72c42.jpg"
+                    alt="Mensen bij de ingang van het Rijks."></figure>
+            <section class="bigFigureSec">
+                <h2>Digital route</h2> 
+            </section>
+        </div>
+        <div class="interactief" id="container">
+            <img id="myImage" src="fotos/foto1.jpg" height="600px" alt="foto sb">
+            <div id="myInteraction">
+                <div id="myTitle">Hier komt de titel</div>
+                <input type="text" id="myInput" autocomplete="off">
+                <input type="button" value="put in" onclick="getInput()">
+                <h3>Choose which direction you want to go!</h3>
+                <nav>
+                    <div class="compass">
+                        <button id="knopNoord" onclick="goDirection('Noord')">North</button>
+                        <div class="sideButtons">
+                            <button id="knopWest" onclick="goDirection('West')">West</button>
+                            <button id="knopOost" onclick="goDirection('Oost')">East</button>
+                        </div>
+                        <button id="knopZuid" onclick="goDirection('Zuid')">South</button>
+                    </div>
+                    <img src="fotos/unnamed.jpg" id="mapImage" alt="Map met compass">
+                </nav>
+
+            </div>
+
+    </main>
+    </div>
+    <script src="interactief.js"></script>
+    <footer>
+        <ul>
+            <li>socials: <a href="https://www.facebook.com/rijksmuseum/" target="_blank">Facebook</a>, <a
+                    href="https://www.instagram.com/rijksmuseum/" target="_blank">Instagram</a>, <a
+                    href="https://www.tiktok.com/@rijksmuseum" target="_blank">Tiktok</a></li>
+            <li>Open yes or no?</li>
+        </ul>
+    </footer>
+
+</html>
