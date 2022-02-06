@@ -368,6 +368,11 @@ h2{
   margin-bottom:5px;
 }
 
+.tentoonBody > .mainNav{
+  align-items: flex-start	;
+  padding-top: 200px;
+}
+
 .tentoon{
   margin: 30px;
 }
@@ -472,7 +477,7 @@ footer{
 
 @media screen and (max-width:600px) {
   .frontend > h1{
-    font-size: 200%;
+    font-size: 175%;
   }
   header{
     height: 300px;
